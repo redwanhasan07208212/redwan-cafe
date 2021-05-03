@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Redwan Cafe</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="row clearfix">
+                <img class="logo" src="logo/cake-3860743_640.png" alt="">
+                <ul class="main-nav animate__slideInDown" id="nav-list">
+                    <li><a href="#">cake delivery</a></li>
+                    <li><a href="#">how to order</a></li>
+                    <li><a href="#">check more</a></li>
+                    <li><a href="#">sign up</a></li>
+                </ul>
+                <a href="#" class="mobile-icon" onclick="slideshow()"><i class="fas fa-bars"></i></a>
+            </div>
+        </nav>
+        <div class="main-content">
+            <h1>welcome to <span class="name-color">redwan cafe.</span><br>
+                house of cake lover or yes</h1>
+            <a class="btn btn-full" href="">click to order</a>
+            <a class="btn btn-show" href="">show me more</a>
+        </div>
+    </header>
+    <script>
+        function slideshow()
+        {
+            const navList = document.getElementById('nav-list');
+            if(navList.style.display === "none")
+            {
+                navList.style.display = "block";
+            }
+            else {
+                navList.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
